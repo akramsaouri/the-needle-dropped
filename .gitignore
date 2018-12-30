@@ -1,0 +1,5 @@
+vendor
+app
+gomon_spawn
+.env
+.DS_Store

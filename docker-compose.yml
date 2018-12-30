@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  app:
+    image: 'whalesan/the-needle-dropped:latest'
+    build: '.'
+    env_file: .env
+    depends_on:
+      - 'db'
+    ports:
+      - '4000:80'
+  db:
+    image: 'mongo:latest'
+    ports:
+      - '27017:27017'

@@ -1,0 +1,74 @@
+<!-- on create -->
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns="http://www.w3.org/2005/Atom">
+  <link rel="hub" href="https://pubsubhubbub.appspot.com" />
+  <link rel="self" href="https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCtEorrVfo4GQsN82HsrnKyA" />
+  <title>YouTube video feed</title>
+  <updated>2018-12-12T06:27:37.882742879+00:00</updated>
+  <entry>
+    <id>yt:video:IB2_L7bd2jA</id>
+    <yt:videoId>IB2_L7bd2jA</yt:videoId>
+    <yt:channelId>UCtEorrVfo4GQsN82HsrnKyA</yt:channelId>
+    <title>Lorem</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=IB2_L7bd2jA" />
+    <author>
+      <name>Ak Ram</name>
+      <uri>https://www.youtube.com/channel/UCtEorrVfo4GQsN82HsrnKyA</uri>
+    </author>
+    <published>2018-12-12T06:27:04+00:00</published>
+    <updated>2018-12-12T06:27:37.882742879+00:00</updated>
+  </entry>
+</feed>
+<!-- ??? -->
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns="http://www.w3.org/2005/Atom">
+  <link rel="hub" href="https://pubsubhubbub.appspot.com" />
+  <link rel="self" href="https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCtEorrVfo4GQsN82HsrnKyA" />
+  <title>YouTube video feed</title>
+  <updated>2018-12-12T06:27:41.97419105+00:00</updated>
+  <entry>
+    <id>yt:video:IB2_L7bd2jA</id>
+    <yt:videoId>IB2_L7bd2jA</yt:videoId>
+    <yt:channelId>UCtEorrVfo4GQsN82HsrnKyA</yt:channelId>
+    <title>Lorem</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=IB2_L7bd2jA" />
+    <author>
+      <name>Ak Ram</name>
+      <uri>https://www.youtube.com/channel/UCtEorrVfo4GQsN82HsrnKyA</uri>
+    </author>
+    <published>2018-12-12T06:27:04+00:00</published>
+    <updated>2018-12-12T06:27:41.97419105+00:00</updated>
+  </entry>
+</feed>
+<!-- on update -->
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns="http://www.w3.org/2005/Atom">
+  <link rel="hub" href="https://pubsubhubbub.appspot.com" />
+  <link rel="self" href="https://www.youtube.com/xml/feeds/videos.xml?channel_id=UCtEorrVfo4GQsN82HsrnKyA" />
+  <title>YouTube video feed</title>
+  <updated>2018-12-12T06:39:29.027202232+00:00</updated>
+  <entry>
+    <id>yt:video:IB2_L7bd2jA</id>
+    <yt:videoId>IB2_L7bd2jA</yt:videoId>
+    <yt:channelId>UCtEorrVfo4GQsN82HsrnKyA</yt:channelId>
+    <title>Lorem*</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=IB2_L7bd2jA" />
+    <author>
+      <name>Ak Ram</name>
+      <uri>https://www.youtube.com/channel/UCtEorrVfo4GQsN82HsrnKyA</uri>
+    </author>
+    <published>2018-12-12T06:27:04+00:00</published>
+    <updated>2018-12-12T06:39:29.027202232+00:00</updated>
+  </entry>
+</feed>
+<!-- on delete -->
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:at="http://purl.org/atompub/tombstones/1.0" xmlns="http://www.w3.org/2005/Atom">
+  <at:deleted-entry ref="yt:video:orlhR4rDHy8" when="2018-12-12T06:21:09+00:00">
+    <link href="https://www.youtube.com/watch?v=orlhR4rDHy8" />
+    <at:by>
+      <name>Ak Ram</name>
+      <uri>https://www.youtube.com/channel/UCtEorrVfo4GQsN82HsrnKyA</uri>
+    </at:by>
+  </at:deleted-entry>
+</feed>
