@@ -1,6 +1,6 @@
 workflow "Build and push docker image" {
   on = "push"
-  resolves = ["Push image"]
+  resolves = ["Push to hub "]
 }
 
 action "Build image" {
@@ -8,8 +8,17 @@ action "Build image" {
   args = "build -t whalesan/the-needle-dropped:latest ."
 }
 
-action "Push image" {
+action "Login to hub" {
   uses = "actions/docker/login@c08a5fc9e0286844156fefff2c141072048141f6"
   needs = ["Build image"]
-  secrets = ["DOCKER_USERNAME", "DOCKER_PASSWORD"]
+  secrets = [
+    "DOCKER_PASSWORD",
+    "DOCKER_USERNAME",
+  ]
+}
+
+action "Push to hub " {
+  uses = "actions/docker/cli@c08a5fc9e0286844156fefff2c141072048141f6"
+  runs = "push whalesan/the-needle-dropped:latest"
+  needs = ["Login to hub"]
 }
