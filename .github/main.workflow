@@ -32,5 +32,5 @@ action "Deploy on lighsail" {
     "PRIVATE_KEY",
     "PUBLIC_KEY",
   ]
-  args = "docker-compose up -d --no-deps app && docker image prune -f"
+  args = "docker-compose pull app && docker-compose up -d --no-deps app && docker image prune -f"
 }
