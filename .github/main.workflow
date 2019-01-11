@@ -1,6 +1,6 @@
 workflow "Build and push docker image" {
   on = "push"
-  resolves = ["Deploy on lighsail"]
+  resolves = ["Deploy on lighsail vps"]
 }
 
 action "Build image" {
@@ -23,7 +23,7 @@ action "Push to hub " {
   args = "push whalesan/the-needle-dropped:latest"
 }
 
-action "Deploy on lighsail" {
+action "Deploy on lighsail vps" {
   uses = "maddox/actions/ssh@master"
   needs = ["Push to hub "]
   secrets = [
