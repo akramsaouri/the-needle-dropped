@@ -21,4 +21,5 @@ action "Push to hub " {
   uses = "actions/docker/cli@c08a5fc9e0286844156fefff2c141072048141f6"
   runs = "push whalesan/the-needle-dropped:latest"
   needs = ["Login to hub"]
+  secrets = ["DOCKER_PASSWORD", "DOCKER_USERNAME"]
 }
