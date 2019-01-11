@@ -1,6 +1,6 @@
 workflow "Build and push docker image" {
   on = "push"
-  resolves = ["Deploy on lighsail vps"]
+  resolves = ["Deploy on lighsail"]
 }
 
 action "Build image" {
@@ -23,7 +23,7 @@ action "Push to hub " {
   args = "push whalesan/the-needle-dropped:latest"
 }
 
-action "Deploy on lighsail vps" {
+action "Deploy on lighsail" {
   uses = "maddox/actions/ssh@master"
   needs = ["Push to hub "]
   secrets = [
@@ -32,5 +32,5 @@ action "Deploy on lighsail vps" {
     "PRIVATE_KEY",
     "PUBLIC_KEY",
   ]
-  args = "docker ps"
+  args = "docker-compose pull app && docker-compose restart app "
 }
