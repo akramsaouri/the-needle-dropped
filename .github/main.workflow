@@ -27,5 +27,5 @@ action "Deploy on lighsail" {
   uses = "maddox/actions/ssh@master"
   needs = ["Push to hub "]
   secrets = ["HOST", "USER", "PRIVATE_KEY"]
-  runs = "docker ps"
+  args = "docker ps"
 }
