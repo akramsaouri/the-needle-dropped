@@ -29,9 +29,6 @@ func main() {
 	}
 
 	r := mux.NewRouter()
-	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "hello*")
-	})
 	r.HandleFunc("/videos", listVideos).Methods("GET")
 	r.HandleFunc("/videos/{title}", viewVideo).Methods("GET")
 	r.HandleFunc("/pubsubhubbub/subscribe", subscribe).Methods("POST")
